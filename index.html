@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueAndamans - Discover Paradise</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Contact Banner - ABOVE Navbar -->
+    <div class="contact-banner" id="contact-banner">
+        <div class="contact-banner-content">
+            <div class="contact-banner-line">
+                📞 <a href="tel:+919599876997" class="contact-banner-link">Call Us - +91 9599876997</a>
+            </div>
+            <div class="contact-banner-line">
+                📧 <a href="mailto:avi.thecooldude.18@gmail.com" class="contact-banner-link">Email Us - avi.thecooldude.18@gmail.com</a>
+            </div>
+        </div>
+        <button class="contact-banner-toggle" id="contact-banner-toggle" aria-label="Toggle contact banner">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Navbar - BELOW Contact Banner -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <img src="logo.jpg" alt="BlueAndamans Logo" class="logo-img">
+                    <span class="logo-text">BlueAndamans</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                        <li><a href="#destinations" class="nav-link" data-page="destinations">Destinations</a></li>
+                        <li><a href="#pricing" class="nav-link" data-scroll="pricing">Packages</a></li>
+                        <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-bg-overlay"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-heading">Discover Paradise in the Andaman Islands</h1>
+                            <p class="hero-description">Experience pristine beaches, crystal clear turquoise waters, vibrant marine life, and unforgettable underwater adventures in one of India's most spectacular tropical destinations.</p>
+                            <div class="hero-actions">
+                                <button class="thq-button-filled" data-page="destinations">Explore Destinations</button>
+                                <button class="thq-button-outline" data-page="contact">Contact Us</button>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="hero-ocean-wave"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why Choose BlueAndamans</h2>
+                        <p>Discover what makes the Andaman Islands a perfect tropical paradise with our expert guidance</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon-img crystal-waters"></div>
+                            <h3>Crystal Clear Waters</h3>
+                            <p>World-class beaches with crystal clear turquoise waters and pristine coral reefs perfect for snorkeling and diving adventures.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon-img marine-wildlife"></div>
+                            <h3>Marine Wildlife</h3>
+                            <p>Encounter vibrant sea turtles, colorful tropical fish, and pristine coral ecosystems in protected marine sanctuaries.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon-img island-hopping"></div>
+                            <h3>Island Hopping</h3>
+                            <p>Explore multiple pristine islands including the famous Ross & Smith Islands connected by a stunning natural sandbar.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon-img adventure-sports"></div>
+                            <h3>Adventure Sports</h3>
+                            <p>Experience world-class scuba diving, snorkeling, water sports, and underwater exploration with professional guidance.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section -->
+            <section class="pricing" id="pricing">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Choose Your Perfect Package</h2>
+                        <p>Select from our carefully crafted tour packages designed for every type of traveler</p>
+                    </div>
+                    <div class="pricing-grid">
+                        <!-- Quick Escape Package A -->
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Quick Escape Package A</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">12,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">3 Nights, 4 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Port Blair arrival</li>
+                                <li>Corbyn's Cove Beach</li>
+                                <li>Cellular Jail</li>
+                                <li>Ross Island</li>
+                            </ul>
+                            <button class="thq-button-outline pricing-btn" data-package="quick-escape-a">Book Now</button>
+                        </div>
+
+                        <!-- Quick Escape Package B -->
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Quick Escape Package B</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">12,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">3 Nights, 4 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Port Blair city tour</li>
+                                <li>Chidiya Tapu sunset</li>
+                                <li>Shopping at Aberdeen Bazaar</li>
+                                <li>Cultural experiences</li>
+                            </ul>
+                            <button class="thq-button-outline pricing-btn" data-package="quick-escape-b">Book Now</button>
+                        </div>
+
+                        <!-- Island Explorer Package A -->
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Island Explorer Package A</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">16,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">4 Nights, 5 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Port Blair sightseeing</li>
+                                <li>Havelock Island</li>
+                                <li>Radhanagar Beach</li>
+                                <li>Water sports</li>
+                            </ul>
+                            <button class="thq-button-outline pricing-btn" data-package="island-explorer-a">Book Now</button>
+                        </div>
+
+                        <!-- Island Explorer Package B -->
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Island Explorer Package B</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">16,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">4 Nights, 5 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Neil Island excursion</li>
+                                <li>Natural Bridge</li>
+                                <li>Bharatpur Beach</li>
+                                <li>Snorkeling activities</li>
+                            </ul>
+                            <button class="thq-button-outline pricing-btn" data-package="island-explorer-b">Book Now</button>
+                        </div>
+
+                        <!-- Paradise Discovery Package A -->
+                        <div class="pricing-card popular">
+                            <div class="popular-badge">Popular Choice</div>
+                            <div class="pricing-header">
+                                <h3>Paradise Discovery Package A</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">22,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">5 Nights, 6 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Multi-island tour</li>
+                                <li>Scuba diving</li>
+                                <li>Beach hopping</li>
+                                <li>Mangrove creek safari</li>
+                            </ul>
+                            <button class="thq-button-filled pricing-btn" data-package="paradise-discovery-a">Book Now</button>
+                        </div>
+
+                        <!-- Paradise Discovery Package B -->
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Paradise Discovery Package B</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">22,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">5 Nights, 6 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Adventure activities</li>
+                                <li>Limestone caves</li>
+                                <li>Tribal village visit</li>
+                                <li>Sunset points</li>
+                            </ul>
+                            <button class="thq-button-outline pricing-btn" data-package="paradise-discovery-b">Book Now</button>
+                        </div>
+
+                        <!-- Complete Andaman Package A -->
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Complete Andaman Package A</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">28,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">6 Nights, 7 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Comprehensive island tour</li>
+                                <li>All major attractions</li>
+                                <li>Water sports</li>
+                                <li>Cultural immersion</li>
+                            </ul>
+                            <button class="thq-button-outline pricing-btn" data-package="complete-andaman-a">Book Now</button>
+                        </div>
+
+                        <!-- Complete Andaman Package B -->
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>Complete Andaman Package B</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">28,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">6 Nights, 7 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>North Andaman exploration</li>
+                                <li>Baratang excursion</li>
+                                <li>Beach activities</li>
+                                <li>Wildlife encounters</li>
+                            </ul>
+                            <button class="thq-button-outline pricing-btn" data-package="complete-andaman-b">Book Now</button>
+                        </div>
+
+                        <!-- Ultimate Adventure Package A -->
+                        <div class="pricing-card luxury">
+                            <div class="pricing-header">
+                                <h3>Ultimate Adventure Package A</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">35,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">7 Nights, 8 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Complete archipelago tour</li>
+                                <li>Advanced diving</li>
+                                <li>Trekking expeditions</li>
+                                <li>Luxury experiences</li>
+                            </ul>
+                            <button class="thq-button-filled pricing-btn" data-package="ultimate-adventure-a">Book Now</button>
+                        </div>
+
+                        <!-- Ultimate Adventure Package B -->
+                        <div class="pricing-card luxury">
+                            <div class="pricing-header">
+                                <h3>Ultimate Adventure Package B</h3>
+                                <div class="price">
+                                    <span class="currency">₹</span>
+                                    <span class="amount">35,999</span>
+                                    <span class="period">/person</span>
+                                </div>
+                                <p class="duration">7 Nights, 8 Days</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>Extended island hopping</li>
+                                <li>Deep sea activities</li>
+                                <li>Remote island visits</li>
+                                <li>Photography tours</li>
+                            </ul>
+                            <button class="thq-button-filled pricing-btn" data-package="ultimate-adventure-b">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <div class="testimonials-ocean-bg"></div>
+                <div class="container">
+                    <div class="section-header">
+                        <h2>What Our Travelers Say</h2>
+                        <p>Real experiences from real people who chose BlueAndamans for their dream vacation</p>
+                    </div>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <span>★★★★★</span>
+                                </div>
+                                <blockquote>"The most incredible vacation experience we've ever had! BlueAndamans made our honeymoon absolutely perfect. The crystal clear waters of Radhanagar Beach and the professional service exceeded all our expectations."</blockquote>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4>Sarah & James Wilson</h4>
+                                        <p>Honeymoon Travelers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <span>★★★★★</span>
+                                </div>
+                                <blockquote>"Perfect family vacation with BlueAndamans! Kids loved the glass bottom boat rides and we enjoyed the cultural experiences. The accommodations were excellent and the guide was very knowledgeable about local history."</blockquote>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4>Rajesh Patel Family</h4>
+                                        <p>Family Travelers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <span>★★★★★</span>
+                                </div>
+                                <blockquote>"Amazing adventure package with BlueAndamans! Scuba diving at Elephant Beach was spectacular. The marine life is incredible and the water visibility is perfect. Will definitely book again for our next adventure."</blockquote>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <p>Adventure Traveler</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Preview Section -->
+            <section class="contact-preview">
+                <div class="container">
+                    <div class="contact-preview-content">
+                        <div class="contact-info">
+                            <h2>Ready to Plan Your Dream Vacation?</h2>
+                            <p>Contact our expert travel consultants at BlueAndamans today to customize your perfect Andaman Islands experience.</p>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <span class="contact-icon">📞</span>
+                                    <a href="tel:+919599876997" class="contact-preview-link">+91 9599876997</a>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">✉️</span>
+                                    <a href="mailto:avi.thecooldude.18@gmail.com" class="contact-preview-link">avi.thecooldude.18@gmail.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">⏰</span>
+                                    <span>Monday - Saturday: 9:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-cta">
+                            <button class="thq-button-filled" data-page="contact">Contact Us Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Destinations Page -->
+        <div id="destinations" class="page">
+            <!-- Destinations Hero Section -->
+            <section class="destinations-hero">
+                <div class="hero-content-wrapper">
+                    <div class="container">
+                        <div class="destinations-hero-content">
+                            <h1 class="destinations-hero-heading">Explore Amazing Destinations</h1>
+                            <p class="destinations-hero-description">Discover the beauty and wonder of the Andaman Islands through our comprehensive destination guide</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Port Blair Gallery Section -->
+            <section class="destination-section">
+                <div class="container">
+                    <h2 class="destination-section-title">Port Blair (South Andaman)</h2>
+                    <div class="destinations-gallery" id="port-blair-gallery">
+                        <!-- Generated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Havelock Island Gallery Section -->
+            <section class="destination-section">
+                <div class="container">
+                    <h2 class="destination-section-title">Havelock Island (South Andaman)</h2>
+                    <div class="destinations-gallery" id="havelock-gallery">
+                        <!-- Generated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Neil Island Gallery Section -->
+            <section class="destination-section">
+                <div class="container">
+                    <h2 class="destination-section-title">Neil Island (South Andaman)</h2>
+                    <div class="destinations-gallery" id="neil-gallery">
+                        <!-- Generated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Museums Section -->
+            <section class="destination-section">
+                <div class="container">
+                    <h2 class="destination-section-title">Popular Museums in Port Blair</h2>
+                    <div class="destinations-gallery" id="museums-gallery">
+                        <!-- Generated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Baratang Section -->
+            <section class="destination-section">
+                <div class="container">
+                    <h2 class="destination-section-title">North & Middle Andaman (Baratang)</h2>
+                    <div class="destinations-gallery" id="baratang-gallery">
+                        <!-- Generated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mayabunder Section -->
+            <section class="destination-section">
+                <div class="container">
+                    <h2 class="destination-section-title">North & Middle Andaman (Mayabunder)</h2>
+                    <div class="destinations-gallery" id="mayabunder-gallery">
+                        <!-- Generated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rangat Section -->
+            <section class="destination-section">
+                <div class="container">
+                    <h2 class="destination-section-title">North & Middle Andaman (Rangat)</h2>
+                    <div class="destinations-gallery" id="rangat-gallery">
+                        <!-- Generated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Diglipur Section -->
+            <section class="destination-section">
+                <div class="container">
+                    <h2 class="destination-section-title">North & Middle Andaman (Diglipur)</h2>
+                    <div class="destinations-gallery" id="diglipur-gallery">
+                        <!-- Generated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section class="page-hero">
+                <div class="contact-hero-bg"></div>
+                <div class="hero-bg-overlay"></div>
+                <div class="container">
+                    <h1>Contact BlueAndamans</h1>
+                    <p>Let's plan your perfect Andaman Islands getaway together</p>
+                </div>
+            </section>
+
+            <section class="contact-form-section">
+                <div class="container">
+                    <div class="contact-wrapper">
+                        <div class="contact-form-container">
+                            <h2>Send us a Message</h2>
+                            <form class="contact-form" id="contact-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="name">Full Name *</label>
+                                        <input type="text" id="name" name="name" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="phone">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="travelers">Number of Travelers</label>
+                                        <select id="travelers" name="travelers" class="form-control">
+                                            <option value="">Select...</option>
+                                            <option value="1">1 Person</option>
+                                            <option value="2">2 People</option>
+                                            <option value="3">3 People</option>
+                                            <option value="4">4 People</option>
+                                            <option value="5">5 People</option>
+                                            <option value="6">6 People</option>
+                                            <option value="7">7 People</option>
+                                            <option value="8">8 People</option>
+                                            <option value="9">9 People</option>
+                                            <option value="10+">10+ People</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="travel_dates">Preferred Travel Dates</label>
+                                        <input type="date" id="travel_dates" name="travel_dates" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="package">Package Interest</label>
+                                        <select id="package" name="package" class="form-control">
+                                            <option value="">Select Package...</option>
+                                            <option value="quick-escape-a">Quick Escape Package A (3N/4D) - ₹12,999</option>
+                                            <option value="quick-escape-b">Quick Escape Package B (3N/4D) - ₹12,999</option>
+                                            <option value="island-explorer-a">Island Explorer Package A (4N/5D) - ₹16,999</option>
+                                            <option value="island-explorer-b">Island Explorer Package B (4N/5D) - ₹16,999</option>
+                                            <option value="paradise-discovery-a">Paradise Discovery Package A (5N/6D) - ₹22,999</option>
+                                            <option value="paradise-discovery-b">Paradise Discovery Package B (5N/6D) - ₹22,999</option>
+                                            <option value="complete-andaman-a">Complete Andaman Package A (6N/7D) - ₹28,999</option>
+                                            <option value="complete-andaman-b">Complete Andaman Package B (6N/7D) - ₹28,999</option>
+                                            <option value="ultimate-adventure-a">Ultimate Adventure Package A (7N/8D) - ₹35,999</option>
+                                            <option value="ultimate-adventure-b">Ultimate Adventure Package B (7N/8D) - ₹35,999</option>
+                                            <option value="custom">Custom Package</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="message">Custom Message</label>
+                                    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your dream vacation preferences, special requirements, or any questions you have about our packages..."></textarea>
+                                </div>
+                                <button type="submit" class="thq-button-filled btn--full-width" id="submit-btn">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                        <div class="contact-info-container">
+                            <h2>Get in Touch</h2>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <strong>📞 Phone:</strong>
+                                    <a href="tel:+919599876997" class="contact-page-link">+91 9599876997</a>
+                                </div>
+                                <div class="contact-item">
+                                    <strong>📧 Email:</strong>
+                                    <a href="mailto:avi.thecooldude.18@gmail.com" class="contact-page-link">avi.thecooldude.18@gmail.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <strong>📍 Address:</strong>
+                                    <span>Tourism Department, Port Blair, Andaman & Nicobar Islands - 744101</span>
+                                </div>
+                                <div class="contact-item">
+                                    <strong>⏰ Hours:</strong>
+                                    <span>Monday - Saturday: 9:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                            <div class="contact-info-note">
+                                <p><strong>Planning Your Trip?</strong></p>
+                                <p>Our travel experts at BlueAndamans are here to help you create the perfect Andaman Islands experience. We offer customized packages for all types of travelers - from romantic honeymoons to thrilling adventures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BlueAndamans</h3>
+                    <p>Your trusted partner for unforgettable travel experiences in the beautiful Andaman Islands. Discover paradise with our expert guidance and personalized service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-page="home">Home</a></li>
+                        <li><a href="#destinations" data-page="destinations">Destinations</a></li>
+                        <li><a href="#pricing" data-scroll="pricing">Packages</a></li>
+                        <li><a href="#contact" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Customized Tour Packages</li>
+                        <li>Island Hopping Tours</li>
+                        <li>Water Sports Activities</li>
+                        <li>Cultural Heritage Tours</li>
+                        <li>Luxury Resort Bookings</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><strong>Phone:</strong> <a href="tel:+919599876997" class="footer-contact-link">+91 9599876997</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:avi.thecooldude.18@gmail.com" class="footer-contact-link">avi.thecooldude.18@gmail.com</a></p>
+                    <p><strong>Location:</strong> Port Blair, Andaman & Nicobar Islands</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BlueAndamans. All rights reserved. | Discover Paradise in the Andaman Islands</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

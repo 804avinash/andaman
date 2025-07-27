@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="images/hero-dest.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- EmailJS CDN -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -35,8 +36,12 @@
         <div class="container">
             <div class="nav-content">
                 <div class="nav-logo">
-                    <img src="logo.jpg" alt="BlueAndamans Logo" class="logo-img">
-                    <span class="logo-text">BlueAndamans</span>
+                   <a href="#home" data-page="home" class="logo-img-link">
+                     <img src="/images/logo.png" alt="BlueAndamans Logo" class="logo-img">
+                       </a>
+                         <a href="#home" data-page="home" class="logo-text-link">
+                           <span class="logo-text">BlueAndamans</span>
+                       </a>
                 </div>
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-list">
@@ -47,10 +52,10 @@
                     </ul>
                 </div>
                 <div class="nav-toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                 </div>
             </div>
         </div>
     </nav>
@@ -576,7 +581,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-label" for="message">Custom Message</label>
+                                    <label class="form-label" for="message">Your Message</label>
                                     <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your dream vacation preferences, special requirements, or any questions you have about our packages..."></textarea>
                                 </div>
                                 <button type="submit" class="thq-button-filled btn--full-width" id="submit-btn">
@@ -633,13 +638,10 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Customized Tour Packages</li>
-                        <li>Island Hopping Tours</li>
-                        <li>Water Sports Activities</li>
-                        <li>Cultural Heritage Tours</li>
-                        <li>Luxury Resort Bookings</li>
+                    <h4>Follow Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/BlueAndamans" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/BlueAndamans" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

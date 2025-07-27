@@ -4,8 +4,8 @@ class BlueAndamansTourismWebsite {
   constructor() {
     this.emailConfig = {
       serviceId: 'service_3y5geju',
-      templateId: 'template_acwjo5f',
-      userId: 'K0WDR0Y4Fj3KtZpoq',
+      templateId: 'template_andaman_inquiry',
+      userId: 'service_3y5geju',
       recipient: 'avi.thecooldude.18@gmail.com'
     };
     
@@ -627,19 +627,11 @@ class BlueAndamansTourismWebsite {
   }
 
   handleContactBannerResize() {
-    if (!this.contactBanner) return;
-
-    const isMobile = window.innerWidth <= 768;
-    
-    if (isMobile) {
-      const hasUserInteracted = this.contactBanner.dataset.userInteracted === 'true';
-      if (!hasUserInteracted && !this.contactBanner.classList.contains('collapsed')) {
-        this.collapseContactBanner();
-      }
-    } else {
-      this.expandContactBanner();
-    }
-  }
+  if (!this.contactBanner) return;
+  
+  // Always keep banner expanded regardless of screen size
+  this.expandContactBanner();
+}
 
   handlePackageSelection(packageType) {
     console.log('🎯 Handling oceanic package selection:', packageType);

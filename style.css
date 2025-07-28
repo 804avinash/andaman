@@ -22,6 +22,17 @@
   --color-red-500: rgba(192, 21, 47, 1);
   --color-orange-400: rgba(230, 129, 97, 1);
   --color-orange-500: rgba(168, 75, 47, 1);
+  --color-coral: #FF6B6B;
+  --coral-gradient: linear-gradient(135deg, var(--color-coral-light) 0%, var(--color-coral) 100%);
+  --color-turquoise: #40E0D0;
+  --color-teal: #008B8B;
+  --color-deep-blue: #1E3A8A;
+  --color-ocean-blue: #0077BE;
+  --color-coral: #FF6B6B;
+  --color-coral-light: #FF8A8A;
+  --color-ocean-dark: #003B5C;
+  --color-seafoam: #66D9F3;
+  --color-wave-blue: #4A90E2;
 
   /* RGB versions for opacity control */
   --color-brown-600-rgb: 94, 82, 64;
@@ -1323,19 +1334,19 @@ h3 {
 
 /* Feature Images - Unique Oceanic Images */
 .crystal-waters {
-  background-image: url('https://pplx-res.cloudinary.com/image/upload/v1753161112/pplx_project_search_images/b6c155e26ea9256e7e9bdad52d24ad22030c2387.jpg');
+  background-image: url('/images/team.png');
 }
 
 .marine-wildlife {
-  background-image: url('https://pplx-res.cloudinary.com/image/upload/v1753161112/pplx_project_search_images/29eee0a345c86145343a4a37942a17a15452993a.jpg');
+  background-image: url('/images/support.jpg');
 }
 
 .island-hopping {
-  background-image: url('https://pplx-res.cloudinary.com/image/upload/v1753161147/pplx_project_search_images/6b04ba56e2cd25646ec4cda57a2c5c74d0d97371.jpg');
+  background-image: url('/images/pricing.png');
 }
 
 .adventure-sports {
-  background-image: url('https://pplx-res.cloudinary.com/image/upload/v1753161089/pplx_project_search_images/9e96c979c846b85e2bc703a7fbfc1f6b9c8a0553.jpg');
+  background-image: url('/images/scuba-diving.png');
 }
 
 .feature-card h3 {
@@ -1399,7 +1410,8 @@ h3 {
 }
 
 .pricing-card.popular {
-  border: 2px solid var(--dl-color-theme-primary1);
+  border-color: var(--color-coral);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 107, 107, 0.05) 100%);
   transform: scale(1.02);
   box-shadow: 0 15px 40px rgba(23, 184, 197, 0.25);
 }
@@ -1414,7 +1426,7 @@ h3 {
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--ocean-gradient);
+  background: var(--coral-gradient);
   color: white;
   padding: 6px 20px;
   border-radius: 20px;

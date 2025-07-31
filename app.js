@@ -973,8 +973,7 @@ class BlueAndamansTourismWebsite {
         hour: '2-digit',
         minute: '2-digit'
       }),
-      destination: 'Andaman Islands - Oceanic Paradise',
-      company: 'BlueAndamans'
+      
     };
 
     this.submitFormViaEmailJS(templateParams);

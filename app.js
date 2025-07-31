@@ -3,10 +3,10 @@
 class BlueAndamansTourismWebsite {
   constructor() {
     this.emailConfig = {
-      serviceId: 'service_3y5geju',
-      templateId: 'template_acwjo5f',
-      userId: 'K0WDR0Y4Fj3KtZpoq',
-      recipient: 'avi.thecooldude.18@gmail.com'
+      serviceId: 'service_fyv3w49',
+      templateId: 'template_un72apq',
+      userId: 'UXpvEd51F37cUC4Kr',
+      recipient: 'inbox@blueandamans.com'
     };
     
     this.packagesData = {

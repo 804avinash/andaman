@@ -4,7 +4,7 @@ class BlueAndamansTourismWebsite {
   constructor() {
     this.emailConfig = {
       serviceId: 'service_3y5geju',
-      templateId: 'template_andaman_inquiry',
+      templateId: 'template_acwjo5f',
       userId: 'K0WDR0Y4Fj3KtZpoq',
       recipient: 'avi.thecooldude.18@gmail.com'
     };
